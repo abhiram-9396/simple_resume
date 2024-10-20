@@ -13,3 +13,45 @@ body {
     background-image: url("https://www.transparenttextures.com/patterns/climpek.png");
     padding: 0;
 }
+
+#brand_name:hover{
+    color: #ffbf00;
+}
+
+#hoverme:hover{
+    color: #ffbf00;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+
+}
+
+.margin {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.login-signup {
+    color: rgb(103, 101, 101);
+    cursor: pointer;
+}
+
+.login-signup:hover {
+    color: black;
+}
+
+.custom-icon {
+    color: lightgrey;
+}
+
+.custom-icon:hover{
+    color: black;
+}
+
+.eye-icon:hover{
+    cursor: pointer;
+}

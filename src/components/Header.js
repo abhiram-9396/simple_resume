@@ -1,8 +1,40 @@
 import React from "react";
+import logo from '../assets/logo.png';
+import { Link } from "react-router-dom";
 
 function Header () {
     return (
-        <h3> This is Header </h3>
+        <>
+            <div>
+            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <Link class="navbar-brand" to="/">
+                        <img src={logo} alt="Bootstrap" width="30" height="24"/>
+                    </Link>
+                    <Link id="brand_name" class="navbar-brand" to="/">Simple Resume</Link>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            {/* <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Generate</a>
+                            </li> */}
+                        </ul>
+                        <>
+                            <Link id="hoverme" class="nav-link active text-light m-2" to="/profile">Profile</Link>
+                            <Link id="hoverme" class="nav-link active text-light m-2" to="/logout">Logout</Link>
+                        </>
+                        
+                        {/* <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form> */}
+                    </div>
+                </div>
+            </nav>
+            </div>
+        </>
     )
 }
 

@@ -1,8 +1,14 @@
 import React from "react";
 
+
 function Footer () {
+    const date = new Date().getFullYear();
     return (
-        <h3> This is Footer </h3>
+        <footer>
+            <p>
+                Made For The Graduates!! © {date}
+            </p>
+        </footer>
     )
 }
 
